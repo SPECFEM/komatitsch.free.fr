@@ -5,11 +5,13 @@ This is a website archive of http://komatitsch.free.fr which has been taken offl
 
 more material & informations:
 
-**github**
+## github
+
 https://github.com/komatits
 
 
-**in memoriam**
+## in memoriam
+
 http://www.lma.cnrs-mrs.fr/spip/spip.php?article811&lang=fr
 
 https://insis.cnrs.fr/fr/cnrsinfo/disparition-de-dimitri-komatitsch
