@@ -1,9 +1,8 @@
 # personal webpage - Dimitri Komatitsch (1970 - 2019)
 
-This is a website archive of http://komatitsch.free.fr which has been taken offline.
-(archived version from Jan 2, 2019)
+This is a website archive of http://komatitsch.free.fr which has been taken offline (archived version from Jan 2, 2019):
 
-more material & informations:
+https://specfem.github.io/komatitsch.free.fr/
 
 ## github
 
