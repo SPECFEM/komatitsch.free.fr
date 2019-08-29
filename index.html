@@ -1,0 +1,200 @@
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>Dimitri Komatitsch</TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.3  (Unix)">
+	<META NAME="CHANGEDBY" CONTENT="Dimitri Komatitsch">
+	<META NAME="KEYWORDS" CONTENT="spectral elements, numerical modeling, seismic waves, PML, CPML, ADEPML, C-PML, ADE-PML, GPU, GPUs, multi-GPU, multi-GPUs, multiGPU, multiGPUs, finite differences, FDTD, geophysics, waves, elastic, acoustic, poroelastic, viscoelastic, finite element, finite elements, spectral element, modeling, modelling, numerical modelling, pseudospectral, pseudo-spectral, time domain, seismics, synthetics, seismogram, seismograms, SPECFEM, SPECFEM2D, SPECFEM3D, SPECFEM3D_GLOBE, SEISMICCPML, SEISMIC_CPML, ocean acoustics, T waves, oceanic T waves, acoustics, imaging, inversion, FWI, RTM, reverse time migration">
+	<META NAME="ROBOTS" CONTENT="ALL">
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<H1 ALIGN=CENTER><A HREF="http://www.cnrs.fr/"><IMG SRC="http://komatitsch.free.fr/logocnrs.gif" NAME="graphics15" ALIGN=BOTTOM WIDTH=100 BORDER=0></A>&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="http://www.lma.cnrs-mrs.fr"><IMG SRC="http://komatitsch.free.fr/lma_picto_web_transp.png" NAME="graphics55" ALIGN=BOTTOM WIDTH=120 BORDER=0></A>
+<A HREF="http://www.univ-amu.fr/en"><IMG SRC="http://komatitsch.free.fr/logo_aix_marseille_universite.png" NAME="graphics12" ALIGN=BOTTOM WIDTH=165 BORDER=0></A>&nbsp;&nbsp;&nbsp;
+</H1>
+<H2 CLASS="western" ALIGN=CENTER><I>CNRS Research Director (Directeur de Recherche CNRS)</I></H2>
+<H2 CLASS="western" ALIGN=CENTER><I>Laboratory of Mechanics and
+Acoustics, CNRS/University of Aix-Marseille, France</I></H2>
+<H2 CLASS="western" ALIGN=CENTER><IMG SRC="http://komatitsch.free.fr/email_DK_CNRS_LMA.png" NAME="Graphic6422" ALIGN=MIDDLE WIDTH=320 BORDER=0></H2>
+<P><center>(je suis fran&ccedil;ais, vous pouvez m'&eacute;crire aussi en fran&ccedil;ais)</center></P>
+<P><BR></P>
+
+<P><b><IMG SRC="http://komatitsch.free.fr/photo_identite.jpg" NAME="Graphic1" ALIGN=LEFT HSPACE=20 WIDTH=195 BORDER=0><I>My
+name is Dimitri Komatitsch, I am a CNRS Research Director (Directeur de Recherche CNRS)
+in the <A HREF="http://www.lma.cnrs-mrs.fr">Laboratory
+of Mechanics and Acoustics</A> at <A HREF="http://www.univ-amu.fr/en">CNRS/University of Aix-Marseille, France</A></I></b>.<br><br>
+<b><I>My ORCID ID is 0000-0003-2309-8269 and my ResearcherID is E-7153-2012.</I></b></P>
+
+<p><b><i>Associate editor of <a href="http://library.seg.org/journal/gpysa7">Geophysics</a>
+and of <a href="http://www.heliyon.com/">Heliyon</a>.</i></b></p>
+
+<p>You can find my publications <a href="http://komatitsch.free.fr/publications.html">here</a>.</p>
+
+My research interests include adjoint/inverse imaging problems based on acoustic waves in industrial, oceanic or geophysical structures, and the study of associated effects related to strong local heterogeneities and/or steep topography,
+as well as the numerical study of acoustic or seismic wave propagation in complex media.
+I also work on numerical modeling and imaging in the context of non destructive testing.
+I use a variational formulation of the equations of elastodynamics, and solve
+it in three dimensions (3-D) using the so-called <I>spectral-element method</I>, a high-order
+version of the finite-element method, which can be shown to be very
+accurate at low cost, and particularly well suited to an efficient
+implementation on parallel computers. This work is done in
+collaboration with Prof. Jeroen Tromp at Princeton University (USA)
+and Prof. Qinya Liu at Toronto University (Canada). We apply such
+numerical techniques to the study of wave propagation both at the
+scale of the Earth and in sedimentary basins, in particular in
+Southern California. The full source code of our software package
+SPECFEM is available open source from <A HREF="http://www.geodynamics.org/cig/software/">Geodynamics.org</A>.
+<BR><BR>
+
+I collaborate with Dr. Sébastien Chevrot from CNRS in Toulouse (France) on <b>future new hybrid techniques for imaging of geological structures
+based on high-frequency body waves, which have the potential of drastically improving the resolution of current tomographic pictures.</b>
+<BR><BR>
+
+I actively work with Dr. Zhinan Xie from University of Harbin (China),
+Roland Martin from University of Toulouse/CNRS (France) and
+Steven D. Gedney (University of Kentucky, USA) on optimized and
+stabilized unsplit Perfectly Matched Layers, called unsplit
+Convolutional PML (C-PML) absorbing layers, for the seismic wave
+equation. We have developed unsplit Convolutional PMLs for isotropic
+and anisotropic media (Komatitsch and Martin, 2007) using a
+finite-difference in the time domain (FDTD) technique based on ideas
+introduced by Roden and Gedney (2000) in the context of
+electromagnetic wave propagation. We have also applied these ideas to
+poroelastic media (Martin, Komatitsch and Ezziani, 2008) and
+developed a stabilized variational form for isotropic or strongly
+anisotropic media modeled using high-order finite elements (Martin,
+Komatitsch and Gedney, 2008). For more details about PML and C-PML,
+see for instance <A HREF="http://en.wikipedia.org/wiki/Perfectly_Matched_Layer">Wikipedia
+about PML</A> as well as our <A HREF="http://komatitsch.free.fr/publications.html">publications</A>.
+For more details about finite differences in the time domain (FDTD),
+see for instance <A HREF="http://en.wikipedia.org/wiki/Finite-difference_time-domain_method">Wikipedia
+about FDTD</A>. All our C-PML source codes are <A HREF="http://www.geodynamics.org/cig/software/">available open source</A>.
+<BR><BR>
+
+I also collaborate with Dominik Göddeke (University of Stuttgart, Germany) on GPU computing (i.e., computing on graphics
+cards) for seismic wave propagation. For more details, see our
+<A HREF="http://komatitsch.free.fr/publications.html">publications</A>.
+<BR><BR>
+
+<IMG SRC="http://komatitsch.free.fr/logocnrs.gif" NAME="graphics2" ALIGN=LEFT WIDTH=100 BORDER=0>
+Our laboratory is affiliated with <A HREF="http://www.cnrs.fr/">CNRS</A>
+as a joint research unit (UMR 7031). Before working in Marseille, I
+was a Professor at University of Pau, France from 2004 to 2010, at
+CNRS lab UMR 5212 (Laboratory of Modeling and Imaging in
+Geosciences), of which I was the Director from 2007 to 2010 and
+Deputy Director in 2005 and 2006; and then a Professor at University
+of Toulouse, France, at CNRS lab UMR 5563 (Laboratory of Geosciences and Environment).
+<BR><BR>
+
+<IMG SRC="http://komatitsch.free.fr/logo_IUF.jpg" NAME="graphics3" ALIGN=LEFT WIDTH=100 HEIGHT=100 BORDER=0><SPAN>I
+was also a member of <A HREF="http://iuf.amue.fr/">Institut universitaire de France (IUF)</A> from 2007 to 2012 (non renewable).
+<BR><BR><BR><BR>
+
+<IMG SRC="http://komatitsch.free.fr/inria_logo.jpg" NAME="graphics3" ALIGN=LEFT WIDTH=140 BORDER=0><SPAN>With
+some colleagues, in 2005 we founded an INRIA research project-team
+called <A HREF="https://team.inria.fr/magique3d/">MAGIQUE-3D</A>.
+<BR><BR><BR>
+
+I collaborated with <A HREF="http://www.ecf.caltech.edu/~krishnan/">Swaminathan Krishnan</A> from Caltech, USA, on the study of strong ground motion
+in Southern California, and on the three-dimensional nonlinear
+analysis of buildings based on his software package <A HREF="http://www.frame3d.caltech.edu/">Frame3D</A>.
+<BR><BR>
+
+I also worked with <A HREF="http://lmi.insa-rouen.fr/membres/9-membres/professeurs/15-gout-christian.html">Christian Gout</A> from INSA Rouen, France,
+on better ways of approximating surfaces with large local variations, such as topographic and
+bathymetric elevation models, or complex three-dimensional geological structures with faults.
+<BR><BR>
+
+I collaborated with Jesús Labarta (Barcelona
+Supercomputing Center, Catalunya, Spain) on optimizing high-order
+finite-element codes on SMP machines. We analyzed our codes using
+their ParaVer/DimeMás performance analysis software package.
+<BR><BR>
+
+<P><A HREF="http://www.caltech.edu/"><IMG SRC="http://komatitsch.free.fr/caltech_logo.gif" NAME="Graphic631" ALIGN=MIDDLE WIDTH=79 HEIGHT=80 BORDER=0></A></SPAN>&nbsp;&nbsp;<SPAN><A HREF="http://www.harvard.edu/"><IMG SRC="http://komatitsch.free.fr/harvard_logo.gif" NAME="Graphic634" ALIGN=MIDDLE WIDTH=90 HEIGHT=90 BORDER=0></A></P>
+<BR>
+
+Before working in France, I was a Senior Research Fellow in Scientific
+Computing and Geophysics in the <A HREF="http://www.gps.caltech.edu/">Division
+of Geological and Planetary Sciences</A> at <A HREF="http://www.caltech.edu/">Caltech</A>
+(California Institute of Technology) in Pasadena, California, USA,
+and in the <A HREF="http://www.eps.harvard.edu/">Department of Earth
+and Planetary Sciences</A> at <A HREF="http://www.harvard.edu/">Harvard University</A> in Cambridge, Massachusetts, USA, for five years.
+<BR><BR>
+
+<P CLASS="msonormal" STYLE="margin-bottom: 0.2in; font-weight: normal">
+<FONT SIZE=3 STYLE="font-size: 13pt">I am a member of the American
+Geophysical Union</FONT> <FONT SIZE=3 STYLE="font-size: 13pt">(AGU),
+of the Society of Exploration Geophysicists (SEG) and of the French Acoustical Society (SFA).</FONT></P>
+
+<P ALIGN=CENTER><IMG SRC="http://komatitsch.free.fr/Web_seismo.gif" NAME="Graphic2" ALIGN=BOTTOM WIDTH=504 HEIGHT=44 BORDER=0></P>
+<P ALIGN=CENTER><SPAN><A HREF="http://komatitsch.free.fr/publications.html"><IMG SRC="http://komatitsch.free.fr/books.gif" NAME="Graphic6" ALIGN=MIDDLE WIDTH=122 HEIGHT=90 BORDER=0></A></SPAN><A HREF="http://komatitsch.free.fr/publications.html">List of publications</A></P>
+<P ALIGN=CENTER><SPAN><A HREF="http://komatitsch.free.fr/CV.html"><IMG SRC="http://komatitsch.free.fr/vitae.jpg" NAME="Graphic5" ALIGN=MIDDLE WIDTH=88 HEIGHT=88 BORDER=0></A></SPAN><A HREF="http://komatitsch.free.fr/CV.html">Curriculum
+Vitae</A></P>
+<P ALIGN=CENTER><SPAN><A HREF="http://www.geodynamics.org/cig/software/"><IMG SRC="http://komatitsch.free.fr/specfem3D.jpg" NAME="graphics10" ALIGN=MIDDLE WIDTH=90 HEIGHT=90 BORDER=0></A></SPAN><A HREF="http://www.geodynamics.org/cig/software/">SPECFEM software packages (SPECFEM2D and SPECFEM3D)</A></P>
+<P ALIGN=CENTER><SPAN><A HREF="http://komatitsch.free.fr/README_seismic_cpml.html"><IMG SRC="http://komatitsch.free.fr/seismic_cpml.gif" NAME="graphics11" ALIGN=MIDDLE WIDTH=158 HEIGHT=30 BORDER=0></A></SPAN><A HREF="http://komatitsch.free.fr/README_seismic_cpml.html">SEISMIC_CPML software package</A></P>
+<p align="center"><a href="http://www.extremeearth.eu/sites/default/files/2018-08/CHEESE.pdf"><img src="http://komatitsch.free.fr/logo_CHEESE.png" name="H2020 INFRAEDI CHEESE PROJECT" align="middle" width="155" border="0"></a></span><a href="http://www.extremeearth.eu/sites/default/files/2018-08/CHEESE.pdf">Our CHEESE Center of Excellence European project (led by BSC in Barcelona, Nov 2018 - Oct 2021)</a>  &nbsp; &nbsp;<a href="http://www.cheese-coe.eu/">Future offical Web page (will open in Dec2018)</a></p>
+<p align="center"><a href="http://www.waves-itn.eu/en/index.html"><img src="http://komatitsch.free.fr/logo_WAVES.jpg" name="H2020 ETN WAVES PROJECT" align="middle" width="198" border="0"></a></span><a href="http://www.waves-itn.eu/en/index.html">Our ETN WAVES European project (led by UPMC in Paris, ending in Dec 2018)</a></p>
+<P ALIGN=CENTER><SPAN><A HREF="http://komatitsch.free.fr/four_old_and_very_hard_to_find_texts_about_T_waves_and_two_about_inversion.html"><IMG SRC="http://komatitsch.free.fr/icon_tip.png" NAME="Graphic486" ALIGN=MIDDLE WIDTH=85 BORDER=0></A></SPAN><A HREF="http://komatitsch.free.fr/four_old_and_very_hard_to_find_texts_about_T_waves_and_two_about_inversion.html">Four old and very hard-to-find texts about oceanic <i>T</i> waves, and two about the adjoint method for imaging and inversion</A></P>
+<P ALIGN=CENTER><SPAN><A HREF="http://komatitsch.free.fr/how_to_write_a_paper_title_or_abstract.html"><IMG SRC="http://komatitsch.free.fr/icon_tip.png" NAME="Graphic786" ALIGN=MIDDLE WIDTH=85 BORDER=0></A></SPAN><A HREF="http://komatitsch.free.fr/how_to_write_a_paper_title_or_abstract.html">How to write a good paper title or abstract (easily!)</A></P>
+
+<P ALIGN=CENTER><SPAN><A HREF="http://www.institut-de-france.fr/institutions/prix-amp-fondations/fondations/fondation-simone-et-cino-del-duca"><IMG SRC="http://komatitsch.free.fr/logo-fondation-del-duca-rouge.png" NAME="graphics211" ALIGN=MIDDLE WIDTH=158 BORDER=0></SPAN><A HREF="http://www.institut-de-france.fr/institutions/prix-amp-fondations/fondations/fondation-simone-et-cino-del-duca">Fondation Simone et Cino del Duca</A></P>
+<P ALIGN=CENTER><A HREF="http://shakemovie.caltech.edu/">ShakeMovie Caltech</A></P>
+<P ALIGN=CENTER><A HREF="http://global.shakemovie.princeton.edu/">Global_ShakeMovie Princeton</A></P>
+<P ALIGN=CENTER><SPAN><A HREF="http://komatitsch.free.fr/genealogy.html"><IMG SRC="http://komatitsch.free.fr/genealogical_tree.gif" NAME="Graphic8" ALIGN=MIDDLE WIDTH=88 HEIGHT=85 BORDER=0></A></SPAN><A HREF="http://komatitsch.free.fr/genealogy_FR.html">Genealogy: my ancestors / Généalogie: mes ancêtres</A></P>
+<P ALIGN=CENTER><IMG SRC="http://komatitsch.free.fr/Web_seismo.gif" NAME="Graphic9" ALIGN=BOTTOM WIDTH=504 HEIGHT=44 BORDER=0></P>
+
+<H3 CLASS="western">Movie of the propagation of a plane shear wave in a concrete block in non-destructive testing
+computed with our acoustic wave propagation code SPECFEM:</H3>
+<P ALIGN=CENTER><A HREF="http://komatitsch.free.fr/shear_wave_in_concrete_SPECFEM_Komatitsch.mpeg"><IMG SRC="http://komatitsch.free.fr/image_movie_shear_wave_in_concrete.png" NAME="image_movie_shear_wave_in_concrete" ALIGN=MIDDLE WIDTH=700 HEIGHT=401 BORDER=0></A></P>
+
+<H3 CLASS="western">Movie of seismic waves propagating in Mars following a meteoritic impact. Movie created using our code SPECFEM3D_GLOBE for the launch of the InSight Mission on May 5, 2018:</H3>
+<P ALIGN=CENTER><A HREF="http://komatitsch.free.fr/movie_of_marsquake_computed_with_SPECFEM3D_for_InSight_SEIS_apr2018.mpg"><IMG SRC="http://komatitsch.free.fr/image_movie_Mars.png" NAME="image_movie_Mars" ALIGN=MIDDLE WIDTH=700 HEIGHT=401 BORDER=0></A></P>
+
+<H3 CLASS="western">Movie of the May 12,
+2008, Sichuan (China, Ms = 8.0, Mw = 7.9) earthquake computed at
+CINES/GENCI (Montpellier, France) with our 3D seismic wave
+propagation code SPECFEM:</H3>
+<P ALIGN=CENTER><A HREF="http://komatitsch.free.fr/movie_SPECFEM3D_85p_US_short.mpeg"><IMG SRC="http://komatitsch.free.fr/image_movie_Sichuan_009000.jpg" NAME="image_movie_Sichuan_009000" ALIGN=MIDDLE WIDTH=700 HEIGHT=401 BORDER=0></A></P>
+
+<H3 CLASS="western">June 2010: a
+multi-GPU port of SPECFEM wins the BULL Joseph Fourier
+supercomputing award:</H3>
+<P ALIGN=CENTER><IMG SRC="http://komatitsch.free.fr/bull_joseph_fourier.png" NAME="Graphic_joseph_fourier" ALIGN=MIDDLE WIDTH=620 HEIGHT=193 BORDER=0></P>
+<H3 CLASS="western">May 2005: our 3D
+seismic wave propagation code SPECFEM on the cover of <I>&quot;Science&quot;</I>,
+for the calculation of the great Sumatra-Andaman earthquake of
+December 26, 2004.</H3>
+<P ALIGN=CENTER><IMG SRC="http://komatitsch.free.fr/science_cover_specfem3D_20may2005.gif" NAME="graphics8" ALIGN=MIDDLE WIDTH=300 HEIGHT=404 BORDER=0></P>
+<H3 CLASS="western">November 2003:
+SPECFEM wins the ACM Gordon Bell Award for Best Performance at the
+ACM/IEEE SuperComputing'2003 conference in Phoenix, Arizona:</H3>
+<P ALIGN=CENTER><IMG SRC="http://komatitsch.free.fr/gordon_bell_award_lower_res.png" NAME="Graphic_gordon" ALIGN=MIDDLE WIDTH=520 HEIGHT=405 BORDER=0></P>
+<P><BR><FONT SIZE=3 STYLE="font-size: 13pt"><SPAN>Read
+our <A HREF="http://komatitsch.free.fr/preprints/sc2003_final.pdf">Gordon Bell
+Award paper</A></SPAN></FONT></P>
+<P><FONT SIZE=3 STYLE="font-size: 13pt"><SPAN>See the <A HREF="http://komatitsch.free.fr/gordon_bell_news_release_2003.html">Press release</A></SPAN></FONT></P>
+<P><FONT SIZE=3 STYLE="font-size: 13pt"><SPAN>The
+source code of SPECFEM is available open source from
+<A HREF="http://www.geodynamics.org/cig/software/">Geodynamics.org</A>.</SPAN></FONT></P>
+<P ALIGN=CENTER><IMG SRC="http://komatitsch.free.fr/Web_seismo.gif" NAME="Graphic2" ALIGN=BOTTOM WIDTH=504 HEIGHT=44 BORDER=0></P>
+<P><FONT SIZE=5><I>Dimitri Komatitsch</I></FONT><BR><FONT SIZE=5><I>
+Laboratoire de M&eacute;canique et d'Acoustique (LMA)<BR>
+UMR 7031 AMU-CNRS-ECM<BR>
+Bureau 120<BR>
+8 rue Enrico Fermi<BR>
+13453 Marseille cedex 13<BR>FRANCE<BR><BR>
+For visitors, here is <A HREF="http://www.lma.cnrs-mrs.fr/spip.php?rubrique42&lang=en">how to reach our building</A>.  
+In Google Maps or in your GPS if you cannot find "Impasse Nikola Tesla" look for "Rue Enrico Fermi" instead, the lab is at the intersection of both.</I></FONT>
+</P>
+<P STYLE="margin-bottom: 0.17in"><FONT SIZE=5><I>email: </I></FONT><FONT SIZE=5>
+<IMG SRC="http://komatitsch.free.fr/email_DK_CNRS_LMA.png" NAME="Graphic64" ALIGN=MIDDLE WIDTH=423 BORDER=0></FONT><FONT SIZE=5><I>(preferred)
+<BR></I></FONT>(je suis fran&ccedil;ais, vous pouvez m'&eacute;crire aussi en fran&ccedil;ais)<FONT SIZE=5><BR></FONT>
+<FONT SIZE=5><BR></FONT><FONT SIZE=5><I>Phone:
+(+ 33) 4 84 52 42 52 (please use email instead if possible)<br>
+Administrative assistant: Ms. St&eacute;phanie LIEUTAUD (+ 33) 4 84 52 56 06</I></FONT>
+</P>
+<HR SIZE=2>
+<ADDRESS STYLE="margin-bottom: 0.2in; text-align: center"><FONT SIZE=2>Dimitri Komatitsch, Last update: September 2018, © 2018, all rights reserved.</FONT></ADDRESS>
+</BODY>
+</HTML>
